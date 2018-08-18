@@ -3,7 +3,7 @@ This is for Data Science Class 3 Week 4 Project
 ## R Script: How the Scripts Work and How they are Connected
 
 
-### Prepare the data for cleanning
+### Data Getting and Cleaning Processes:
 1. Download and unzip the file.
 2. Put the train and test data into two tables "train" and "test". They are tables containing the columns "Activity", "Subject"" and the variables in the Feature file. 
 3. Combine the two tables, called "all" and create the data set called "Merged".
