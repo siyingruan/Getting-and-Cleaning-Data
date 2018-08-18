@@ -2,6 +2,11 @@
 This is for Data Science Class 3 Week 4 Project
 ## R Script: How the Scripts Work and How they are Connected
 
+## This Project Includes Files as Follow:
+1. CodeBook.md
+2. Tidy.txt
+3. R_Script_Data_Cleaning_Project. R
+4. README.md
 
 ### Data Getting and Cleaning Processes:
 1. Download and unzip the file.
