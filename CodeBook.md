@@ -11,6 +11,7 @@
 * Via Opera Pia 11A, I-16145, Genoa, Italy.
 * [Email Contact](activityrecognition@smartlab.ws)
 * [SmartLab](www.smartlab.ws)
+* [Link to the Dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 ***
 #### Data Collection Process
@@ -65,7 +66,7 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
 
 ***
 
-####Data Transformation Work:
+#### Data Transformation Work:
 
 1. Merges the training and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement.
