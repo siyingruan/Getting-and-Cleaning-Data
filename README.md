@@ -3,7 +3,7 @@ This is for Data Science Class 3 Week 4 Project
 ## R Script: How the Scripts Work and How they are Connected
 
 
-## Prepare the data for cleanning
+### Prepare the data for cleanning
 1. Download and unzip the file.
 2. Put the train and test data into two tables "train" and "test". They are tables containing the columns "Activity", "Subject"" and the variables in the Feature file. 
 3. Combine the two tables, called "all" and create the data set called "Merged".
@@ -49,14 +49,14 @@ testS<-read.csv("subject_test.txt", header = F, sep = " ")
 test<-data.frame(testS, testA, testX)
 names(test)<-c(c("Subject", "Activity"), features)
 ```
-## 1. Merges the train and test sets into 1 data set called all
+### 1. Merges the train and test sets into 1 data set called all
 ```
 all<-rbind(train,test)
 ##create the dataset and put into the desire directory
 setwd("C:/Users/Ms. Kui/Desktop/Coursera/DataCleaning")
 write.table (x = all, file = "Merged.txt", row.names = F )
 ```
-## 2. Extract only the measurements on the mean and standard deviation for 
+### 2. Extract only the measurements on the mean and standard deviation for 
 ```
 each measurement
 ##The keyword is mean or std in the variables (features), grep()return the column number
@@ -64,7 +64,7 @@ select<-grep("mean|std",features)
 ## Extra the dataset, select + 2 because the index of "select" starts from 1
 subset<-all[,c(1,2,select + 2)]
 ```
-## 3. Uses descriptive activiy names to name the activities in the data
+### 3. Uses descriptive activiy names to name the activities in the data
 ```
 ## To matching the activity_label to the activity list number, note that this is a 2 dimension table, so use read.table not read.csv
 Labela<-read.table("./UCI HAR Dataset/activity_labels.txt", header = F)
@@ -72,7 +72,7 @@ Labela<-read.table("./UCI HAR Dataset/activity_labels.txt", header = F)
 Labela<-as.character(Labela[,2])
 subset$Activity <- Labela[subset$Activity]
 ```
-## 4. Appropriately labels the data set with descriptive variable names.
+### 4. Appropriately labels the data set with descriptive variable names.
 ```
 ## Use string function to detail the description
 nme<-names(subset)
@@ -87,7 +87,7 @@ nme <-gsub("std","_StandardDeviation_",nme)
 nme <-gsub("-","_",nme)
 names(subset)<-nme
 ```
-## 5. Create a second data set from the step 4 with the average of each variable for each activity and each subject
+### 5. Create a second data set from the step 4 with the average of each variable for each activity and each subject
 ```
 ## Calculate the mean from column 3 to 81 group by the activity (Name as Activity) and  subject (name as Subject)
 tidy<-aggregate(subset[,3:81], by = list(Activity = subset$Activity, Subject = subset$Subject), FUN = mean)
