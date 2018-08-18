@@ -12,8 +12,8 @@ This is for Data Science Class 3 Week 4 Project
 6. Detailed the names on the variables using the fucntion gsub(). 
 7. Calculate the mean on the "subset" by the "activty" and "subject", and store the data into a table called "tidy" and create the data set called "Tidy".
 
+### Getting the Data and Putting them Together
 ```
-
 library(data.table)
 ## Download the zip file and unzip the file for use
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
