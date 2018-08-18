@@ -78,8 +78,8 @@ For more information about this dataset contact: activityrecognition@smartlab.ws
 #### The Output Data Variables and the Description
 | Position | Variables                       | Description                                                  |
 |----------|---------------------------------|--------------------------------------------------------------|
-| 1        | subject                         | subject                                                      |
-| 2        | activity                        | activity                                                     |
+| 1        | Subject                         | Subject                                                      |
+| 2        | Activity                        | Activity                                                     |
 | 3        | tBodyAcc-mean()-X               | TimeDomain_BodyAccelerometer_Mean__X                         |
 | 4        | tBodyAcc-mean()-Y               | TimeDomain_BodyAccelerometer_Mean__Y                         |
 | 5        | tBodyAcc-mean()-Z               | TimeDomain_BodyAccelerometer_Mean__Z                         |
