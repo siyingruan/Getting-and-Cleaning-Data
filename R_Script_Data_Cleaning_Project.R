@@ -49,6 +49,7 @@ subset<-all[,c(1,2,select + 2)]
 Labela<-read.table("./UCI HAR Dataset/activity_labels.txt", header = F)
   ## Get only the 2nd column of the data
 Labela<-as.character(Labela[,2])
+  ## Match the activity names to the subset table
 subset$Activity <- Labela[subset$Activity]
 
 ## 4. Appropriately labels the data set with descriptive variable names.
