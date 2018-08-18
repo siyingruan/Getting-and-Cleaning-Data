@@ -1,4 +1,6 @@
 # Code Book
+### This code book is to document variables, summaries and unit for getting and cleaning the Dataset as described below. 
+
 ## Human Activity Recognition Using Smartphones Dataset
 ### Version 1.0
 
